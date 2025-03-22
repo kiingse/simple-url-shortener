@@ -10,6 +10,11 @@ services:
       POSTGRES_DB: url_shortener_db
     volumes:
       - postgres_data:/var/lib/postgresql/data/
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U url_shortener_db"]
+      interval: 1s
+      timeout: 3s
+      retries: 5
 
   app:
     container_name: url_shortener_backend_app
@@ -25,7 +30,8 @@ services:
     volumes:
       - .:/app
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     restart: on-failure
 
 volumes:
