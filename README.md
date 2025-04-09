@@ -1,6 +1,6 @@
-# URL Shortener - Appchance task
+# URL Shortener
 
-A simple URL shortening tool built with FastAPI, PostgreSQL and Docker as a recruitment task for the Appchance company. This tool allows you to create shortened URLs and manage redirects efficiently.
+A simple URL shortening tool built with FastAPI, PostgreSQL and Docker. This tool allows you to create shortened URLs and manage redirects efficiently.
 
 ## Features
 
