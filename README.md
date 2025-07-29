@@ -8,6 +8,7 @@ A simple URL shortening tool built with FastAPI, PostgreSQL and Docker. This too
 - Configure the length of shortened URLs in .env
 - RESTful API for easy integration
 - Containerized with Docker for simple deployment
+- Optimized Docker image using multistage building
 
 
 ## Tech Stack
@@ -17,7 +18,6 @@ A simple URL shortening tool built with FastAPI, PostgreSQL and Docker. This too
 - **ORM**: SQLAlchemy
 - **Dependency Management**: Poetry
 - **Containerization**: Docker, Docker Compose
-- Optimized Docker image using multistage building
 
 
 ## Prerequisites
