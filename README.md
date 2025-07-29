@@ -13,10 +13,11 @@ A simple URL shortening tool built with FastAPI, PostgreSQL and Docker. This too
 ## Tech Stack
 
 - **Backend**: Python 3.12, FastAPI, Pydantic
-- **Database**: PostgreSQL 16.3
+- **Database**: PostgreSQL 17.5
 - **ORM**: SQLAlchemy
 - **Dependency Management**: Poetry
 - **Containerization**: Docker, Docker Compose
+- Optimized Docker image using multistage building
 
 
 ## Prerequisites
